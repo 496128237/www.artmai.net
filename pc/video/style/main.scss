@@ -1,4 +1,130 @@
-import
+body {
+  background-color: #f6f6f6;
+  font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #333;
+  min-width: 1200px;
+}
 
-"reset.css"
-;
+.flex_sb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+.text_ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*topbar*/
+#topbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  line-height: 30px;
+  font-size: 12px;
+  .topbar_l {
+    span {
+      background: url("../images/topbar_ico.png") no-repeat left center;
+      background-position-y: 1px;
+      padding-left: 20px;
+    }
+  }
+  .topbar_nav {
+    margin-right: 36px;
+    em {
+      color: #ccc;
+      margin: 0 10px;
+    }
+    a {
+      color: #333;
+    }
+    a:hover {
+      color: #666;
+    }
+  }
+}
+
+/*顶部nav与logo与搜索框*/
+.header_nav {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  a {
+    color: #333;
+  }
+  a:hover {
+    color: #666;
+  }
+  em {
+    color: #ccc;
+    margin: 0 20px;
+  }
+}
+
+.header_logo {
+  img {
+    border-right: 1px solid #ccc;
+    padding-right: 18px;
+    margin-right: 24px;
+    float: left;
+  }
+  span {
+    font-size: 20px;
+    color: #333;
+    margin-top: 3px;
+  }
+}
+
+.header_search {
+  margin-left: 340px;
+  margin-top: 20px;
+  input[type="text"] {
+    border: 1px solid #111;
+    font-size: 12px;
+    width: 236px;
+    height: 32px;
+    padding: 0 5px;
+    color: #666;
+  }
+  button[type="submit"] {
+    background: #111 url("../images/header_ser.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    border: none;
+  }
+}
+
+.header_tel {
+  font-size: 14px;
+  color: #999;
+  margin-top: 12px;
+  .tel {
+    margin-left: 10px;
+
+  }
+  p {
+    font-size: 26px;
+    color: #f46100;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+}
