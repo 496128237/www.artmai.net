@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/lib-flexible.js"></script>
+    <!-- 上拉加载,下拉刷新插件 -->
+    <link rel="stylesheet" href="js/dropload/dropload.css">
+    <script src="js/dropload/dropload.min.js"></script>
+
+    <title>盛世文藏</title>
+</head>
+
+<body>
+    <!-- 右侧侧滑菜单 -->
+    <div id="right_nav" class="">
+        <div class="nav_zhezhao fl">
+
+        </div>
+        <div class="r_nav fr">
+            <div class="r_navlogo">
+                <a href="">
+                    <img src="images/r_navlogo.png" alt="">
+                    <p>盛世文藏网</p>
+                </a>
+            </div>
+            <ul class="r_nav_menu">
+                <li>
+                    <a href="">
+                        <img src="images/r_nav_sy.png" alt="">
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/r_nav_zx.png" alt="">
+                        <p>藏品展销</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/r_nav_ss.png" alt="">
+                        <p>搜藏品</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header -->
+    <div id="header">
+        <div class="container flex">
+            <div class="logobox">
+                <a href="">
+                    <img src="images/h_logo.png" alt="" class="middle">
+                </a>
+            </div>
+            <div class="nav middle">
+                <span>首页</span>
+                <img src="images/nav_ico.png" alt="" class="middle" id="h_nav">
+            </div>
+        </div>
+    </div>
+
+    <!-- VIP精品推荐 -->
+    <div id="recom">
+        <div class="container">
+            <!-- 副标题 -->
+            <div class="subhead flex">
+                <p>VIP精品推荐
+                    <span>VIP products recommended</span>
+                </p>
+                <a href="" class="more">更多 >></a>
+            </div>
+            <ul class="content flex">
+                <li>
+                    <em class="viper"></em>
+                    <a href="" class="imgbox">
+                        <img src="http://192.168.18.12/uploads/image/20180310/1520657557.gif" alt="">
+                    </a>
+                    <a href="" class="info">
+                        <p class="text_ell">稀世珍藏稀世珍藏稀世珍藏</p>
+                        <span class="text_ell">售价：RMB 4,5004,5004,500</span>
+                    </a>
+                    <div class="weiguan flex">
+                        <span>5526次围观</span>
+                        <i class="guoqi CHN"></i>
+                        <!-- <img src="images/guoqi.jpg" alt="" class="guoqi"> -->
+                    </div>
+                    <a href="" class="status">展销中</a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="" class="imgbox">
+                        <img src="http://wap.china-yacuitang.com/uploads/image/20160410/1460282786.jpg" alt="" class="middle">
+                    </a>
+                    <a href="" class="info">
+                        <p class="text_ell">稀世珍藏稀世珍藏稀世珍藏稀世珍藏稀世珍藏稀世珍藏</p>
+                        <span class="text_ell">售价：RMB 4,5004,5004,500稀世珍藏稀世珍藏稀世珍藏</span>
+                    </a>
+                    <div class="weiguan flex">
+                        <span>5526次围观</span>
+                        <img src="images/guoqi.jpg" alt="" class="guoqi">
+                    </div>
+                    <a href="" class="status">展销中</a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="" class="imgbox">
+                        <img src="http://192.168.18.12/uploads/image/20180310/1520657557.gif" alt="">
+                    </a>
+                    <a href="" class="info">
+                        <p class="text_ell">稀世珍藏稀世珍藏稀世珍藏</p>
+                        <span class="text_ell">售价：RMB 4,5004,5004,500</span>
+                    </a>
+                    <div class="weiguan flex">
+                        <span>5526次围观</span>
+                        <img src="images/guoqi.jpg" alt="" class="guoqi">
+                    </div>
+                    <a href="" class="status">展销中</a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="" class="imgbox">
+                        <img src="http://wap.china-yacuitang.com/uploads/image/20160410/1460282786.jpg" alt="" class="middle">
+                    </a>
+                    <a href="" class="info">
+                        <p class="text_ell">稀世珍藏稀世珍藏稀世珍藏稀世珍藏稀世珍藏稀世珍藏</p>
+                        <span class="text_ell">售价：RMB 4,5004,5004,500稀世珍藏稀世珍藏稀世珍藏</span>
+                    </a>
+                    <div class="weiguan flex">
+                        <span>5526次围观</span>
+                        <img src="images/guoqi.jpg" alt="" class="guoqi">
+                    </div>
+                    <a href="" class="status">展销中</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 广告图 -->
+    <img src="images/adv01.jpg" alt="" class="adv01">
+
+    <!-- 环球展厅VIP专场 -->
+    <div id="special">
+        <div class="container">
+            <!-- 副标题 -->
+            <div class="subhead flex">
+                <p>环球展厅VIP专场
+                    <span> VIP Special performance</span>
+                </p>
+                <a href="" class="more">更多 >></a>
+            </div>
+            <ul class="content">
+                <li>
+                    <em class="viper"></em>
+                    <a href="">
+                        <img src="http://192.168.18.12/uploads/image/20171227/1514368902.jpg" alt="">
+                        <p class="tit text_ell">洵美且异 - VIP精品玉器专场洵美且异 - VIP精品玉器专场</p>
+                        <p class="dec text_ell">Alone but beauty and vision - VIP special fine jadeAlone but beauty and vision - VIP special fine
+                            jade </p>
+                        <div class="endtime flex">
+                            <p class="distime" data-endtime="2018-12-18 08:00:00">距离结束:
+                                <span class="d">0</span>天
+                                <span class="h">0</span>时
+                                <span class="m">0</span>分
+                                <span class="s">0</span>秒</p>
+                            <img src="images/guoqi.jpg" alt="" class="guoqi">
+                        </div>
+                        <p class="weiguan">5526次围观</p>
+                        <p class="status">VIP精品买家火热招商中</p>
+                    </a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="">
+                        <img src="http://192.168.18.12/uploads/image/20171227/1514368902.jpg" alt="">
+                        <p class="tit text_ell">洵美且异 - VIP精品玉器专场洵美且异 - VIP精品玉器专场</p>
+                        <p class="dec text_ell">Alone but beauty and vision - VIP special fine jadeAlone but beauty and vision - VIP special fine
+                            jade </p>
+                        <div class="endtime flex">
+                            <p class="distime" data-endtime="2018-12-18 08:00:00">距离结束:
+                                <span class="d">0</span>天
+                                <span class="h">0</span>时
+                                <span class="m">0</span>分
+                                <span class="s">0</span>秒</p>
+                            <img src="images/guoqi.jpg" alt="" class="guoqi">
+                        </div>
+                        <p class="weiguan">5526次围观</p>
+                        <p class="status">VIP精品买家火热招商中</p>
+                    </a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="">
+                        <img src="http://192.168.18.12/uploads/image/20171227/1514368902.jpg" alt="">
+                        <p class="tit text_ell">洵美且异 - VIP精品玉器专场洵美且异 - VIP精品玉器专场</p>
+                        <p class="dec text_ell">Alone but beauty and vision - VIP special fine jadeAlone but beauty and vision - VIP special fine
+                            jade </p>
+                        <div class="endtime flex">
+                            <p class="distime" data-endtime="2018-12-18 08:00:00">距离结束:
+                                <span class="d">0</span>天
+                                <span class="h">0</span>时
+                                <span class="m">0</span>分
+                                <span class="s">0</span>秒</p>
+                            <img src="images/guoqi.jpg" alt="" class="guoqi">
+                        </div>
+                        <p class="weiguan">5526次围观</p>
+                        <p class="status">VIP精品买家火热招商中</p>
+                    </a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="">
+                        <img src="http://192.168.18.12/uploads/image/20171227/1514368902.jpg" alt="">
+                        <p class="tit text_ell">洵美且异 - VIP精品玉器专场洵美且异 - VIP精品玉器专场</p>
+                        <p class="dec text_ell">Alone but beauty and vision - VIP special fine jadeAlone but beauty and vision - VIP special fine
+                            jade </p>
+                        <div class="endtime flex">
+                            <p class="distime" data-endtime="2018-12-18 08:00:00">距离结束:
+                                <span class="d">0</span>天
+                                <span class="h">0</span>时
+                                <span class="m">0</span>分
+                                <span class="s">0</span>秒</p>
+                            <img src="images/guoqi.jpg" alt="" class="guoqi">
+                        </div>
+                        <p class="weiguan">5526次围观</p>
+                        <p class="status">VIP精品买家火热招商中</p>
+                    </a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="">
+                        <img src="http://192.168.18.12/uploads/image/20171227/1514368902.jpg" alt="">
+                        <p class="tit text_ell">洵美且异 - VIP精品玉器专场洵美且异 - VIP精品玉器专场</p>
+                        <p class="dec text_ell">Alone but beauty and vision - VIP special fine jadeAlone but beauty and vision - VIP special fine
+                            jade </p>
+                        <div class="endtime flex">
+                            <p class="distime" data-endtime="2018-12-18 08:00:00">距离结束:
+                                <span class="d">0</span>天
+                                <span class="h">0</span>时
+                                <span class="m">0</span>分
+                                <span class="s">0</span>秒</p>
+                            <img src="images/guoqi.jpg" alt="" class="guoqi">
+                        </div>
+                        <p class="weiguan">5526次围观</p>
+                        <p class="status">VIP精品买家火热招商中</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- VIP精品买家招商 -->
+    <div id="buyers">
+        <div class="container">
+            <!-- 副标题 -->
+            <div class="subhead flex">
+                <p>VIP精品买家招商
+                    <span>VIP buyers investment promotion</span>
+                </p>
+            </div>
+            <ul class="content flex">
+                <li>
+                    <em class="viper"></em>
+                    <a href="" class="imgbox">
+                        <img src="http://192.168.18.12/uploads/image/20180310/1520657557.gif" alt="">
+                    </a>
+                    <a href="" class="info">
+                        <p class="text_ell">稀世珍藏稀世珍藏稀世珍藏</p>
+                        <span class="text_ell">售价：RMB 4,5004,5004,500</span>
+                    </a>
+                    <div class="weiguan flex">
+                        <span>5526次围观</span>
+                        <img src="images/guoqi.jpg" alt="" class="guoqi">
+                    </div>
+                    <a href="" class="status">展销中</a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="" class="imgbox">
+                        <img src="http://wap.china-yacuitang.com/uploads/image/20160410/1460282786.jpg" alt="" class="middle">
+                    </a>
+                    <a href="" class="info">
+                        <p class="text_ell">稀世珍藏稀世珍藏稀世珍藏稀世珍藏稀世珍藏稀世珍藏</p>
+                        <span class="text_ell">售价：RMB 4,5004,5004,500稀世珍藏稀世珍藏稀世珍藏</span>
+                    </a>
+                    <div class="weiguan flex">
+                        <span>5526次围观</span>
+                        <img src="images/guoqi.jpg" alt="" class="guoqi">
+                    </div>
+                    <a href="" class="status">展销中</a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="" class="imgbox">
+                        <img src="http://192.168.18.12/uploads/image/20180310/1520657557.gif" alt="">
+                    </a>
+                    <a href="" class="info">
+                        <p class="text_ell">稀世珍藏稀世珍藏稀世珍藏</p>
+                        <span class="text_ell">售价：RMB 4,5004,5004,500</span>
+                    </a>
+                    <div class="weiguan flex">
+                        <span>5526次围观</span>
+                        <img src="images/guoqi.jpg" alt="" class="guoqi">
+                    </div>
+                    <a href="" class="status">展销中</a>
+                </li>
+                <li>
+                    <em class="viper"></em>
+                    <a href="" class="imgbox">
+                        <img src="http://wap.china-yacuitang.com/uploads/image/20160410/1460282786.jpg" alt="" class="middle">
+                    </a>
+                    <a href="" class="info">
+                        <p class="text_ell">稀世珍藏稀世珍藏稀世珍藏稀世珍藏稀世珍藏稀世珍藏</p>
+                        <span class="text_ell">售价：RMB 4,5004,5004,500稀世珍藏稀世珍藏稀世珍藏</span>
+                    </a>
+                    <div class="weiguan flex">
+                        <span>5526次围观</span>
+                        <img src="images/guoqi.jpg" alt="" class="guoqi">
+                    </div>
+                    <a href="" class="status">展销中</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 版权 -->
+    <div id="banquan">
+        <div class="banquanbox container">
+                Copyright©2017版权信息<br>版权所有归属于盛世百科文化传播有限公司
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <ul class="flex">
+                <li>
+                    <a href="">
+                        <img src="images/f_nav_zx.png" alt="">
+                        <p>藏品展销</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/f_nav_sy.png" alt="">
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/f_nav_ss.png" alt="">
+                        <p>搜藏品</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

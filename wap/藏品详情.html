@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/reset.css">
+    <!-- <link rel="stylesheet" href="style/dropload.css"> -->
+    <link rel="stylesheet" href="style/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/lib-flexible.js"></script>
+
+    <!-- 滚动插件 -->
+    <link rel="stylesheet" href="style/swiper-4.1.6.min.css">
+    <script src="js/swiper-4.1.6.min.js"></script>
+
+    <!-- 相册插件 -->
+    <link rel="stylesheet" href="js/photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="js/photoswipe/default-skin/default-skin.css">
+    <script src="js/photoswipe/photoswipe.min.js"></script>
+    <script src="js/photoswipe/photoswipe-ui-default.min.js"></script>
+    <title>藏友展销</title>
+</head>
+
+<body>
+    <!-- 右侧侧滑菜单 -->
+    <div id="right_nav" class="">
+        <div class="nav_zhezhao fl">
+
+        </div>
+        <div class="r_nav fr">
+            <div class="r_navlogo">
+                <a href="">
+                    <img src="images/r_navlogo.png" alt="">
+                    <p>盛世文藏网</p>
+                </a>
+            </div>
+            <ul class="r_nav_menu">
+                <li>
+                    <a href="">
+                        <img src="images/r_nav_sy.png" alt="">
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/r_nav_zx.png" alt="">
+                        <p>藏品展销</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/r_nav_ss.png" alt="">
+                        <p>搜藏品</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 详情页header -->
+    <div id="info_header">
+        <div class="container flex">
+            <div class="goback">
+                <a href="javascript:history.go(-1);">
+                    <img src="images/fanhui.png" alt="" class="middle">
+                </a>
+            </div>
+            <div class="title">藏品详情</div>
+            <div class="nav middle">
+                <img src="images/nav_ico.png" alt="" class="middle" id="h_nav">
+            </div>
+        </div>
+    </div>
+
+    <!-- 图片相册   start -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share hide" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 图片相册   end -->
+    <!-- 藏品图片详情 -->
+    <div id="cp_imginfo">
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper demo-gallery">
+                    <a class="imgbox swiper-slide" href="images/cp01.jpg" data-size="100x100" data-med="images/cp01.jpg" data-med-size="100x100"
+                        data-author="Samuel Rohl">
+                        <img alt="" class="swiper-lazy swiper-lazy-loaded" src="images/cp01.jpg">
+                    </a>
+                    <a class="imgbox swiper-slide" href="images/cp01.jpg" data-size="100x100" data-med="images/cp01.jpg" data-med-size="100x100"
+                        data-author="Samuel Rohl">
+                        <img alt="" class="swiper-lazy swiper-lazy-loaded" src="images/cp01.jpg">
+                    </a>
+                    <a class="imgbox swiper-slide" href="images/cp01.jpg" data-size="100x100" data-med="images/cp01.jpg" data-med-size="100x100"
+                        data-author="Samuel Rohl">
+                        <img alt="" class="swiper-lazy swiper-lazy-loaded" src="images/cp01.jpg">
+                    </a>
+
+                </div>
+                <div class="swiper-pagination">
+                    <span id="active-num">0</span>/
+                    <span id="all-num">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 藏品详情tab切换 -->
+    <div id="info_tab">
+        <div class="container">
+            <div class="infocontent">
+                <div class="item">
+                    <p class="tit text_ell">清代笔筒清代笔筒清代笔筒清代笔筒清代笔筒清代笔筒清代笔筒清代笔筒</p>
+                    <div class="fenlei flex">
+                        <span>类别:瓷器</span>
+                        <img src="images/guoqi.jpg" alt="" class="guoqi">
+                    </div>
+                    <p class="status text_ell">展销中</p>
+                    <p class="status text_ell end">已结束</p>
+                    <div class="endtime flex">
+                        <p class="distime" data-endtime="2018-12-18 08:00:00">距离结束:
+                            <span class="d">0</span>天
+                            <span class="h">0</span>时
+                            <span class="m">0</span>分
+                            <span class="s">0</span>秒</p>
+                    </div>
+                    <p class="weiguan">
+                        <span>1055次</span>围观
+                    </p>
+                    <div class="jiage">
+                        <p>售&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价：<strong>￥RMB:议价</strong></p>
+                        <p>联系藏主：<a href="" target="_bank">点击在线咨询</a></p>
+                    </div>
+                    <p class="fs">交易方式：藏友线下交易/交换</p>
+                    <!-- 藏品详情与用户信息 -->
+                    <div id="info_xinxi">
+                        <div class="qiehuan clearfix">
+                            <p class="on">藏品详情</p>
+                            <p class="">会员信息</p>
+                        </div>
+                        <div class="info_xinxi_box">
+                            <div class="box">
+                                <table>
+                                    <tr>
+                                        <td class="l">藏品名称</td>
+                                        <td class="r">清代笔清代笔筒</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l">类型</td>
+                                        <td class="r">瓷器</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l">数量</td>
+                                        <td class="r">1个</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l">藏品规格</td>
+                                        <td class="r">直径29cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="l">藏品价格</td>
+                                        <td class="r">￥RMB:议价</td>
+                                    </tr>
+                                </table>
+                                <!-- 藏品描述展示 -->
+                                <div class="dec">
+                                    <p>藏品描述展示</p>
+                                    <span>笔筒：用陶瓷、竹木、等制成的筒形插笔器具。笔筒是搁放毛笔的专用器物，据文献记载，它的材质有镏金、翡翠、紫檀和乌木，现在我们能够见到的传世器物，大多是用瓷或者是竹木制作的。具有收藏价值。</span>
+                                </div>
+                            </div>
+                            <div class="box userinfo">
+                                <div class="userbox middle">
+                                    <img src="images/userllogo.jpg" alt="" class="touxiang middle">
+                                    <span class="name">清风杨020</span>
+                                    <img src="images/lv01.png" alt="" class="lv middle">
+                                </div>
+                                <p class="dengji">会员等级：<span>（实名认证会员）</span></p>
+                                <p class="lianxiren">联&nbsp;&nbsp;系&nbsp;&nbsp;人：<span>吴女士</span></p>
+                                <p class="city">所在城市：<span>武汉</span></p>
+                                <!-- 只有普通藏品才展示联系电话 -->
+                                <p class="tel">联系电话：<span>13968**299</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <ul class="flex">
+                <li>
+                    <a href="/藏友展销.html">
+                        <img src="images/f_nav_zx.png" alt="">
+                        <p>藏品展销</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.html">
+                        <img src="images/f_nav_sy.png" alt="">
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/搜索.html">
+                        <img src="images/f_nav_ss.png" alt="">
+                        <p>搜藏品</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script>
+        /* 图片滚动 */
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            //  nextButton: '.swiper-button-next',
+            //  prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            lazyLoading: true,
+            on: {
+                init: function () {
+                    //Swiper初始化了
+                    document.getElementById("active-num").innerHTML = this.activeIndex + 1;
+                    document.getElementById("all-num").innerHTML = this.slides.length;
+                },
+                slideChangeTransitionEnd: function () {
+                    document.getElementById("active-num").innerHTML = this.activeIndex + 1;
+                }
+            },
+        });
+        /* tab切换 */
+        $(function () {
+            /* 藏品详情与用户评论 */
+            $("#info_xinxi .info_xinxi_box").find(".box:first").show();    //为每个BOX的第一个元素显示        
+            $("#info_xinxi .qiehuan p").on("tap", function () {
+                var index = $(this).index();  //获取当前li标签的个数
+                $("#info_xinxi .info_xinxi_box .box").eq(index).show().siblings().hide();
+                $(this).addClass("on").siblings().removeClass("on"); //a标签显示，同辈元素隐藏 
+            });
+        })
+    </script>
+    <script src="js/photoswipe/photoswipe.init.min.js"></script>
+</body>
+
+</html>
