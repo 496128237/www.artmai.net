@@ -10,10 +10,18 @@
     <link rel="stylesheet" href="style/reset.css">
     <!--hover动画样式-->
     <link rel="stylesheet" href="style/hover.css">
+    <!--index.css-->
+    <link rel="stylesheet" href="style/index.css">
+    <!--footer.css-->
+    <link rel="stylesheet" href="style/footer.css">
+
+    <!--jquery-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--SuperSlide-->
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
     <!--swiper-->
     <link rel="stylesheet" href="plug/swiper/swiper-4.1.6.min.css">
-
-    <link rel="stylesheet" href="style/main.css">
+    <script src="plug/swiper/swiper-4.1.6.min.js"></script>
 </head>
 <body>
 <!--topbar-->
@@ -35,18 +43,15 @@
             <span>分享到：</span>
             <div class="share fl">
                 <!-- JiaThis Button BEGIN -->
-                <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#"
-                                                                                                  class="bds_weixin"
-                                                                                                  data-cmd="weixin"
-                                                                                                  title="分享到微信"></a><a
-                        href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone"
-                                                                                           data-cmd="qzone"
-                                                                                           title="分享到QQ空间"></a><a
-                        href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a><a href="#"
-                                                                                              class="bds_mshare"
-                                                                                              data-cmd="mshare"
-                                                                                              title="分享到一键分享"></a></div>
-                <script>window._bd_share_config = {
+                <div class="bdsharebuttonbox">
+                    <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin"
+                                                                        title="分享到微信"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+                    <a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a></div>
+                <script>
+                    window._bd_share_config = {
                     "common": {
                         "bdSnsKey": {},
                         "bdText": "",
@@ -57,7 +62,8 @@
                         "bdSize": "16"
                     }, "share": {}
                 };
-                with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                    with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                </script>
                 <!-- JiaThis Button END -->
             </div>
         </div>
@@ -181,7 +187,7 @@
                     </li>
                     <li class="swiper-slide">
                         <a href="javascript:">
-                            <img src="images/cate_ciqi.png" alt="">
+                            <img src="images/banner01.jpg" alt="">
                         </a>
                     </li>
                     <li class="swiper-slide">
@@ -236,7 +242,7 @@
 
 <div class="w1200 clearfix">
     <!--视频展销-->
-    <div id="video_sell" class="fl">
+    <div class="video_sell fl">
         <p class="top">视频展销<span>Video display</span></p>
         <ul class="clearfix">
             <li>
@@ -558,29 +564,440 @@
     </div>
 </div>
 
-<script src="js/jquery-1.12.4.min.js"></script>
-<script src="plug/swiper/swiper-4.1.6.min.js"></script>
-<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<div id="fine">
+    <div class="fine_list w1200">
+        <!--瓷器-->
+        <div class="ciqi">
+            <div class="lm_tit"><span>瓷器</span><i>Porcelain</i></div>
+            <div class="lm_cont clearfix">
+                <div class="layer_l fl">
+                    <div class="fine_h">
+                        <img src="images/goods01.jpg" width="400" height="420" class="middle">
+                        <p class="see">
+                            <img src="images/hot_ico.png" alt="">
+                            1055次
+                            <span>围观</span>
+                        </p>
+                        <div class="info">
+                            <a href="" class="tit text_ell">清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯</a>
+                            <p class="text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_r fr">
+                    <ul class="ul_fine clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/瓷器-->
+        <!--玉器-->
+        <div class="yuqi top42">
+            <div class="lm_tit"><span>玉器</span><i>jadeware</i></div>
+            <div class="lm_cont clearfix">
+                <div class="layer_l fl">
+                    <div class="fine_h">
+                        <img src="images/goods01.jpg" width="400" height="420" class="middle">
+                        <p class="see">
+                            <img src="images/hot_ico.png" alt="">
+                            1055次
+                            <span>围观</span>
+                        </p>
+                        <div class="info">
+                            <a href="" class="tit text_ell">清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯</a>
+                            <p class="text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_r fr">
+                    <ul class="ul_fine clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/玉器-->
+        <!--字画-->
+        <div class="zihua top42">
+            <div class="lm_tit"><span>字画</span><i>Calligraphy and painting</i></div>
+            <div class="lm_cont clearfix">
+                <div class="layer_l fl">
+                    <div class="fine_h">
+                        <img src="images/goods01.jpg" width="400" height="420" class="middle">
+                        <p class="see">
+                            <img src="images/hot_ico.png" alt="">
+                            1055次
+                            <span>围观</span>
+                        </p>
+                        <div class="info">
+                            <a href="" class="tit text_ell">清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯</a>
+                            <p class="text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_r fr">
+                    <ul class="ul_fine clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/字画-->
+        <!--杂项-->
+        <div class="zaxiang top42">
+            <div class="lm_tit"><span>杂项</span><i>miscellaneous</i></div>
+            <div class="lm_cont clearfix">
+                <div class="layer_l fl">
+                    <div class="fine_h">
+                        <img src="images/goods01.jpg" width="400" height="420" class="middle">
+                        <p class="see">
+                            <img src="images/hot_ico.png" alt="">
+                            1055次
+                            <span>围观</span>
+                        </p>
+                        <div class="info">
+                            <a href="" class="tit text_ell">清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯</a>
+                            <p class="text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_r fr">
+                    <ul class="ul_fine clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/杂项-->
+        <!--钱币-->
+        <div class="zihua top42">
+            <div class="lm_tit"><span>钱币</span><i>Coin</i></div>
+            <div class="lm_cont clearfix">
+                <div class="layer_l fl">
+                    <div class="fine_h">
+                        <img src="images/goods01.jpg" width="400" height="420" class="middle">
+                        <p class="see">
+                            <img src="images/hot_ico.png" alt="">
+                            1055次
+                            <span>围观</span>
+                        </p>
+                        <div class="info">
+                            <a href="" class="tit text_ell">清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯清和田玉马上封侯</a>
+                            <p class="text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_r fr">
+                    <ul class="ul_fine clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/goods01.jpg"/>
+                                <p class="ul_fine_t">清和田玉马上封侯清</p>
+                                <p class="ul_fine_c text_ell">委托售价：<span>RMB360000000000000000元</span></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/钱币-->
+    </div>
+</div>
+
+
 <script>
-    /*首页banner轮播*/
-    var BannerSwiper = new Swiper('#home_hero .banner .swiper-container', {
-        spaceBetween: 30,
-        effect: 'coverflow',
-        autoplay: true,
-        simulateTouch: false,//禁止鼠标模拟
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+    $(function () {
+        /*首页banner轮播*/
+        var BannerSwiper = new Swiper('#home_hero .banner .swiper-container', {
+            spaceBetween: 30,
+            effect: 'coverflow',
+            autoplay: true,
+            simulateTouch: false,//禁止鼠标模拟
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        /*精品推荐滚动轮播*/
+        jQuery("#recommend .con").slide({
+            mainCell: "ul",
+            vis: 4,
+            prevCell: ".sPrev",
+            nextCell: ".sNext",
+            effect: "leftLoop"
+        });
     });
-    /*精品推荐滚动轮播*/
-    jQuery("#recommend .con").slide({
-        mainCell: "ul",
-        vis: 4,
-        prevCell: ".sPrev",
-        nextCell: ".sNext",
-        effect: "leftLoop"
-    });
+
 </script>
 
 </body>

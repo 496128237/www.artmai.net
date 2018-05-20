@@ -236,3 +236,44 @@ input[type=button] {
 	display: block;
 	clear: both;
 }
+
+body {
+    background-color: #f6f6f6;
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+    min-width: 1200px;
+}
+
+.flex_sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fz0 {
+    font-size: 0;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.text_ell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}

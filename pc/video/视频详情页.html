@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>视频展销</title>
+    <!--初始化样式-->
+    <link rel="stylesheet" href="style/reset.css">
+    <!--hover动画样式-->
+    <link rel="stylesheet" href="style/hover.css">
+    <!--main.css-->
+    <link rel="stylesheet" href="style/main.css">
+    <!--footer.css-->
+    <link rel="stylesheet" href="style/footer.css">
+
+    <!--jquery-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--SuperSlide-->
+    <!--<script src="js/jquery.SuperSlide.2.1.1.js"></script>-->
+    <!--swiper-->
+    <!--<link rel="stylesheet" href="plug/swiper/swiper-4.1.6.min.css">-->
+    <!--<script src="plug/swiper/swiper-4.1.6.min.js"></script>-->
+    <!--hoverdir-->
+    <!--<script src="plug/hoverdir/jquery.hoverdir.js"></script>-->
+</head>
+<body>
+<!--topbar-->
+<div id="topbar">
+    <div class="w1200 clearfix">
+        <div class="topbar_l fl">
+            <span>重要公告:</span>
+            <marquee align="left" style="float:right;" width="260" height="30" behavior="scroll" direction="left"
+                     vspace="0" loop="-1" scrollamount="10" scrolldelay="200">近期有一些买家反映有卖家频繁失约的情况，如再发现实名举报，作封号处理！
+            </marquee>
+        </div>
+        <div class="topbar_r fr flex_sb">
+            <div class="topbar_nav">
+                <a href="">网站首页</a><em>|</em>
+                <a href="">会员登录</a><em>|</em>
+                <a href="">免费注册</a><em>|</em>
+                <a href="">申请注册买家会员</a>
+            </div>
+            <span>分享到：</span>
+            <div class="share fl">
+                <!-- JiaThis Button BEGIN -->
+                <div class="bdsharebuttonbox">
+                    <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin"
+                                                                        title="分享到微信"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+                    <a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a></div>
+                <script>
+                    window._bd_share_config = {
+                        "common": {
+                            "bdSnsKey": {},
+                            "bdText": "",
+                            "bdMini": "2",
+                            "bdMiniList": false,
+                            "bdPic": "",
+                            "bdStyle": "0",
+                            "bdSize": "16"
+                        }, "share": {}
+                    };
+                    with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                </script>
+                <!-- JiaThis Button END -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 顶部logo与搜索框 -->
+<div id="header">
+    <div class="w1200 clearfix">
+        <!--header_nav-->
+        <div class="header_nav">
+            <a href="">VIP专场</a><em>|</em>
+            <a href="">普通专场</a><em>|</em>
+            <a href="">藏品展销</a><em>|</em>
+            <a href="">视频展销</a><em>|</em>
+            <a href="">历史成交</a><em>|</em>
+            <a href="">藏品出租</a><em>|</em>
+            <a href="">藏品求租</a><em>|</em>
+            <a href="">藏品求购</a><em>|</em>
+            <a href="">资讯中心</a><em>|</em>
+            <a href="">关于我们</a>
+        </div>
+        <!--header_logo-->
+        <div class="header_logo fl clearfix">
+            <a href="/"><img src="images/header_logo.png" alt=""></a>
+            <span class="fl">视频<br>展销</span>
+        </div>
+        <!--header_search-->
+        <div class="header_search fl clearfix">
+            <form action="">
+                <input type="text" placeholder="请输入藏品名称" class="fl">
+                <button type="submit" class="fl"></button>
+            </form>
+        </div>
+        <!--header_tel-->
+        <div class="header_tel fr clearfix">
+            <img src="images/header_tel.png" alt="" class="fl">
+            <div class="tel fr">
+                <span>全国统一免费咨询热线</span>
+                <p>400-805-6760</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 2px;background-color: #111;margin: 20px auto 0;width: 1200px;"></div>
+<!--页面路径-->
+<div id="page_path">
+    <div class="w1200">
+        <a href="">网站首页</a><em>></em>
+        <a href="">视频展销</a><em>></em>
+        <a href="">瓷器</a><em>></em>
+        <a href="">清光绪款青花龙纹盘</a>
+    </div>
+</div>
+
+<!--藏品详情-->
+<div id="goodinfo">
+    <div class="w1200 clearfix">
+        <div class="goo_le fl">
+            <div class="clearfix">
+                <a href="javascript:" class="imgbox fl">
+                    <img src="images/banner01.jpg" class="middle" alt="">
+                    <img src="images/play_ico.png" alt="" class="playico">
+                </a>
+                <div class="info fr">
+                    <p class="tit text_ell">清光绪款青花龙纹盘清光绪款青花龙纹盘清光绪款青花龙纹盘清光绪款青花龙纹盘</p>
+                    <div class="clearfix">
+                        <p class="leibie fl">类别：<span>瓷器</span></p>
+                        <p class="time fl">发布日期：<span>2018-02-02</span></p>
+                    </div>
+                    <p class="status ing">展销中</p>
+                    <div class="distime" data-endtime="2020-05-08 08:00:00">距离结束：<span class="d">718</span>天<span
+                            class="h">14</span>时<span class="m">40</span>分<span class="s">50</span>秒
+                    </div>
+                    <div class="sale">
+                        <p>委托售价：<span>RMB  360000</span></p>
+                        <p>交易方式：藏友线下交易/交换</p>
+                    </div>
+                    <div class="clearfix">
+                        <p class="weiguan fl"><span>1055</span>围观</p>
+                        <p class=" dianzan fl"><img src="images/dz_ico.png" alt=""><span>1055</span>点赞</p>
+                        <div class="fenxiang fl clearfix"><span class="fl">分享到：</span>
+                            <div class="share fl">
+                                <!-- JiaThis Button BEGIN -->
+                                <div class="bdsharebuttonbox">
+                                    <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin"
+                                                                                        data-cmd="weixin"
+                                                                                        title="分享到微信"></a>
+                                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+                                    <a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a></div>
+                                <script>
+                                    window._bd_share_config = {
+                                        "common": {
+                                            "bdSnsKey": {},
+                                            "bdText": "",
+                                            "bdMini": "2",
+                                            "bdMiniList": false,
+                                            "bdPic": "",
+                                            "bdStyle": "0",
+                                            "bdSize": "16"
+                                        }, "share": {}
+                                    };
+                                    with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+                                </script>
+                                <!-- JiaThis Button END -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tel">
+                        <span>开通VIP会员：</span><img src="images/info_telico.png" alt="" class="middle">
+                        <span>400-8088-360</span>
+                    </div>
+                </div>
+            </div>
+            <table class="infotable">
+                <tr>
+                    <td>年代</td>
+                    <td>清代</td>
+                    <td>作者</td>
+                    <td>王羲之</td>
+                </tr>
+                <tr>
+                    <td>规格</td>
+                    <td>25.5*25.5*1.5cm</td>
+                    <td>重量</td>
+                    <td>9kg</td>
+                </tr>
+                <tr>
+                    <td>保存状态</td>
+                    <td>完好</td>
+                    <td>来源</td>
+                    <td>祖传</td>
+                </tr>
+            </table>
+            <div class="info_dec">
+                <div class="t">藏品描述</div>
+                <div>
+                    笔筒：用陶瓷、竹木、等制成的筒形插笔器具。笔筒是搁放毛笔的专用器物，据文献记载，它的材质有镏金、翡翠、紫檀和乌木，现在我们能够见到的传世器物，大多是用瓷或者是竹木制作的。具有收藏价值。
+
+                    笔筒是文房用具之一。为筒状盛笔的器皿，多为直口，直壁，口底相若，造型相对简单，没有大的变化。笔筒产生的年代已不可考，三国吴陆玑《毛诗草木鸟兽虫鱼疏螟蛉有子》：“取桑虫负之于木空中，或书简笔筒中，七日而化”。其所说笔筒是否为今日笔筒，不得而知。从传世品来看多为明代中晚期之物，墓葬出土之物，亦不见有宋元笔筒。明屠隆《文具雅编》：“湘竹为之，以紫檀乌木棱口镶座为雅，余不入品”。明文震亨《长物志》：“笔筒，湘竹，栟榈者佳”。故有笔筒为晚明之物一说，但查宋无名氏《致虚杂俎》：“羲之有巧石笔架，名‘扈’；献之有斑竹笔筒，名‘裘钟’皆世无其匹”。似乎笔筒的年代应起码推至宋代。由于此系文化史范畴，故这里不加以论述。
+
+                    瓷质笔筒应该产生于宋代：故宫博物院陶瓷鉴定专家冯先铭先生在【中国古陶瓷图典】中说“笔筒，文房用具，插放毛笔之用，始见于宋，流行于清，器型似筒状。宋代笔筒口径较小，传世不多”。?
+
+                    笔筒是一种最为常见的置笔用具，一般呈圆筒状，材质多样，可见竹、木、瓷、漆、玉、象牙、紫砂等，是文人书案上的常设之物。在古代，笔筒以其艺术个性和较高的文化品位，受到文人墨客的青睐。明代文人朱彝尊曾作《笔筒铭》，云：“笔之在案，或侧或颇，犹人之无仪，筒以束之，如客得家，闲彼放心，归于无邪。”
+
+                    笔筒的制作除了材质的不同，绘画技法也得到了充分的体现。二十世纪初期，江西景德镇的瓷画艺人对传统粉彩画法加以改造，用粉彩原料在瓷器上绘制中国画，形成了以“珠山八友”为代表的瓷绘名家流派。余文襄，又名恂松，别号华舜，斋名“清平画室”“名泉古屋”，师承“珠山八友”之一的何许人，擅长绘画雪景。他的雪景画构思严谨，极富诗意，被誉为“雪景大王”。
+
+                    笔筒是中国古代除笔、墨、纸、砚以外最重要的文房用具，大约出现在明朝中晚期。笔筒因使用方便，很快就风靡天下，至今仍盛而不衰。
+
+                    明清笔筒传世品极多，虽形制变化不大，但材质却颇为丰富。有竹、瓷、木、铜、象牙、玉、水晶、端石、漆等。从装饰方法上看，有刻、镂、雕、绘等，以瓷笔筒为例，有青花、五彩、粉彩、三彩、颜色釉等。笔筒为文房用具中器型变化最小，装饰方法最为丰富的品种之一。
+                </div>
+            </div>
+        </div>
+        <div class="goo_ri fr">2</div>
+    </div>
+</div>
+</body>
+</html>

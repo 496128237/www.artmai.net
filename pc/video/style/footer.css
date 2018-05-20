@@ -1,0 +1,254 @@
+/*footer*/
+#zixun {
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #cccccc;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#zixun ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#zixun li {
+    float: left;
+    width: 260px;
+    border-right: 1px solid #ccc;
+}
+
+#zixun li:last-child {
+    border-right: none;
+}
+
+#zixun li img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+#zixun li span {
+    font-size: 16px;
+    color: #666;
+}
+
+#footer {
+    background-color: #e9e9e9;
+    padding: 40px 0 30px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer li {
+    float: left;
+    width: 16%;
+}
+
+#footer li p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#footer li a {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    height: 30px;
+    line-height: 30px;
+}
+
+#footer li a:before {
+    content: ">";
+    color: #b5b5b5;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+#footer li span {
+    font-size: 14px;
+    color: #666;
+    line-height: 2.143;
+}
+
+#footer li span .hong {
+    color: #cc0000;
+    font-size: 18px;
+}
+
+#links {
+    background-color: #e9e9e9;
+    padding-bottom: 20px;
+}
+
+#links p {
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    color: #333;
+    float: left;
+    margin-right: 50px;
+}
+
+#links p span {
+    text-transform: uppercase;
+    color: #cc0000;
+    margin-right: 10px;
+}
+
+#links li {
+    float: left;
+    line-height: 24px;
+    margin-right: 20px;
+}
+
+#links li a {
+    font-size: 14px;
+    color: #999;
+}
+
+#links li:hover a {
+    color: #444;
+}
+
+#banquan {
+    background-color: #434343;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#banquan p {
+    font-size: 14px;
+    color: #999;
+    line-height: 24px;
+}
+
+#banquan li {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.footer a {
+    color: #00A0E9;
+}
+
+/*top and ewm*/
+#elevator_item {
+    width: 60px;
+    height: 150px;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    opacity: 1;
+    z-index: 100020;
+    display: none;
+}
+
+#elevator_item.off {
+    opacity: 0;
+    visibility: hidden
+}
+
+#elevator {
+    display: block;
+    width: 60px;
+    height: 50px;
+    background: url(http://artmai.net/images/icon_top.png) center center no-repeat;
+    background-color: #444;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    margin-bottom: 10px
+}
+
+#elevator:hover {
+    background-color: rgba(0, 0, 0, .7)
+}
+
+#elevator:active {
+    background-color: rgba(0, 0, 0, .75)
+}
+
+#elevator_item .qr {
+    display: block;
+    width: 60px;
+    height: 40px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    background: url(http://artmai.net/images/icon_code.png) center center no-repeat;
+    background-color: #444;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#elevator_item .qr:hover {
+    background-color: rgba(0, 0, 0, .7)
+}
+
+#elevator_item .qr:active {
+    background-color: rgba(0, 0, 0, .75)
+}
+
+#elevator_item .qr-popup {
+    width: 170px;
+    height: 200px;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    border-radius: 2px;
+    display: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+#elevator_item .qr-popup .code-link {
+    display: block;
+    margin: 10px 10px 0 10px;
+    color: #777
+}
+
+#elevator_item .qr-popup .code {
+    display: block;
+    margin-bottom: 5px
+}
+
+#elevator_item .qr-popup .arr {
+    width: 6px;
+    height: 11px;
+    background: url(http://artmai.net/images/code_arrow.png) no-repeat;
+    position: absolute;
+    right: -6px;
+    bottom: 14px
+}
+
+#elevator_item .msg {
+    display: block;
+    width: 60px;
+    height: 40px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    background: url(http://artmai.net/images/msg.png) center center no-repeat;
+    background-color: #444;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    right: 0px;
+    top: 60px;
+}
+
+#elevator_item .msg:hover {
+    background-color: rgba(0, 0, 0, .7)
+}
+
+#elevator_item .msg:active {
+    background-color: rgba(0, 0, 0, .75)
+}
