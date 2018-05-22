@@ -135,4 +135,71 @@
 #goodinfo .goo_le .info .fenxiang { padding: 20px 0; font-size: 14px; color: #999; }
 #goodinfo .goo_le .info .fenxiang .bdsharebuttonbox { margin-top: -4px; }
 #goodinfo .goo_le .info .tel { border-top: 1px solid #f46100; padding-top: 10px; font-size: 26px; color: #f46100; }
+
+#goodinfo .goo_le .infotable {
+    margin-top: 60px;
+}
+
+#goodinfo .goo_le .infotable p {
+    font-size: 16px;
+    color: #111;
+    border-left: 3px solid #f46100;
+    line-height: 16px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+#goodinfo .goo_le .infotable table {
+    border-left: 1px solid #ccc;
+}
+
+#goodinfo .goo_le .infotable td {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-left: 22px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+#goodinfo .goo_le .infotable tr:nth-child(1) td:nth-child(1), #goodinfo .goo_le .infotable tr:nth-child(1) td:nth-child(2), #goodinfo .goo_le .infotable tr:nth-child(1) td:nth-child(3), #goodinfo .goo_le .infotable tr:nth-child(1) td:nth-child(4), #goodinfo .goo_le .infotable tr:nth-child(2) td:nth-child(1), #goodinfo .goo_le .infotable tr:nth-child(2) td:nth-child(2), #goodinfo .goo_le .infotable tr:nth-child(2) td:nth-child(3), #goodinfo .goo_le .infotable tr:nth-child(2) td:nth-child(4) {
+    border-bottom: none;
+}
+
+#goodinfo .goo_le .infotable .t {
+    width: 120px;
+    color: #777;
+    background-color: #fff;
+}
+
+#goodinfo .goo_le .infotable .c {
+    width: 340px;
+    background: #f6f6f6;
+    color: #333;
+}
+
+#goodinfo .goo_le .info_dec {
+    margin-top: 30px;
+}
+
+#goodinfo .goo_le .info_dec .t {
+    font-size: 16px;
+    color: #111;
+    border-left: 3px solid #f46100;
+    line-height: 16px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+#goodinfo .goo_le .info_dec .textarea {
+    background: none;
+    font-size: 14px;
+    color: #666;
+}
+
+#goodinfo .goo_le .info_dec .textarea p {
+    text-indent: 28px;
+    line-height: 1.857;
+}
 #goodinfo .goo_ri { width: 210px; }

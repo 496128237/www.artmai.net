@@ -24,6 +24,7 @@
     <!--<script src="plug/swiper/swiper-4.1.6.min.js"></script>-->
     <!--hoverdir-->
     <!--<script src="plug/hoverdir/jquery.hoverdir.js"></script>-->
+
 </head>
 <body>
 <!--topbar-->
@@ -126,7 +127,7 @@
     <div class="w1200 clearfix">
         <div class="goo_le fl">
             <div class="clearfix">
-                <a href="javascript:" class="imgbox fl">
+                <a href="javascript:" onclick="open_video('http://www.baidu.com');" class="imgbox fl">
                     <img src="images/banner01.jpg" class="middle" alt="">
                     <img src="images/play_ico.png" alt="" class="playico">
                 </a>
@@ -182,47 +183,253 @@
                     </div>
                 </div>
             </div>
-            <table class="infotable">
-                <tr>
-                    <td>年代</td>
-                    <td>清代</td>
-                    <td>作者</td>
-                    <td>王羲之</td>
-                </tr>
-                <tr>
-                    <td>规格</td>
-                    <td>25.5*25.5*1.5cm</td>
-                    <td>重量</td>
-                    <td>9kg</td>
-                </tr>
-                <tr>
-                    <td>保存状态</td>
-                    <td>完好</td>
-                    <td>来源</td>
-                    <td>祖传</td>
-                </tr>
-            </table>
+
+            <div class="infotable">
+                <p>藏品信息</p>
+                <table>
+                    <tr>
+                        <td class="t">年代</td>
+                        <td class="c">清代</td>
+                        <td class="t">作者</td>
+                        <td class="c">王羲之</td>
+                    </tr>
+                    <tr>
+                        <td class="t">规格</td>
+                        <td class="c">25.5*25.5*1.5cm</td>
+                        <td class="t">重量</td>
+                        <td class="c">9kg</td>
+                    </tr>
+                    <tr>
+                        <td class="t">保存状态</td>
+                        <td class="c">完好</td>
+                        <td class="t">来源</td>
+                        <td class="c">祖传</td>
+                    </tr>
+                </table>
+            </div>
             <div class="info_dec">
                 <div class="t">藏品描述</div>
-                <div>
-                    笔筒：用陶瓷、竹木、等制成的筒形插笔器具。笔筒是搁放毛笔的专用器物，据文献记载，它的材质有镏金、翡翠、紫檀和乌木，现在我们能够见到的传世器物，大多是用瓷或者是竹木制作的。具有收藏价值。
+                <div class="textarea">
+                    <p>笔筒：用陶瓷、竹木、等制成的筒形插笔器具。笔筒是搁放毛笔的专用器物，据文献记载，它的材质有镏金、翡翠、紫檀和乌木，现在我们能够见到的传世器物，大多是用瓷或者是竹木制作的。具有收藏价值。</p>
 
-                    笔筒是文房用具之一。为筒状盛笔的器皿，多为直口，直壁，口底相若，造型相对简单，没有大的变化。笔筒产生的年代已不可考，三国吴陆玑《毛诗草木鸟兽虫鱼疏螟蛉有子》：“取桑虫负之于木空中，或书简笔筒中，七日而化”。其所说笔筒是否为今日笔筒，不得而知。从传世品来看多为明代中晚期之物，墓葬出土之物，亦不见有宋元笔筒。明屠隆《文具雅编》：“湘竹为之，以紫檀乌木棱口镶座为雅，余不入品”。明文震亨《长物志》：“笔筒，湘竹，栟榈者佳”。故有笔筒为晚明之物一说，但查宋无名氏《致虚杂俎》：“羲之有巧石笔架，名‘扈’；献之有斑竹笔筒，名‘裘钟’皆世无其匹”。似乎笔筒的年代应起码推至宋代。由于此系文化史范畴，故这里不加以论述。
+                    <p>
+                        笔筒是文房用具之一。为筒状盛笔的器皿，多为直口，直壁，口底相若，造型相对简单，没有大的变化。笔筒产生的年代已不可考，三国吴陆玑《毛诗草木鸟兽虫鱼疏螟蛉有子》：“取桑虫负之于木空中，或书简笔筒中，七日而化”。其所说笔筒是否为今日笔筒，不得而知。从传世品来看多为明代中晚期之物，墓葬出土之物，亦不见有宋元笔筒。明屠隆《文具雅编》：“湘竹为之，以紫檀乌木棱口镶座为雅，余不入品”。明文震亨《长物志》：“笔筒，湘竹，栟榈者佳”。故有笔筒为晚明之物一说，但查宋无名氏《致虚杂俎》：“羲之有巧石笔架，名‘扈’；献之有斑竹笔筒，名‘裘钟’皆世无其匹”。似乎笔筒的年代应起码推至宋代。由于此系文化史范畴，故这里不加以论述。</p>
 
-                    瓷质笔筒应该产生于宋代：故宫博物院陶瓷鉴定专家冯先铭先生在【中国古陶瓷图典】中说“笔筒，文房用具，插放毛笔之用，始见于宋，流行于清，器型似筒状。宋代笔筒口径较小，传世不多”。?
+                    <p>瓷质笔筒应该产生于宋代：故宫博物院陶瓷鉴定专家冯先铭先生在【中国古陶瓷图典】中说“笔筒，文房用具，插放毛笔之用，始见于宋，流行于清，器型似筒状。宋代笔筒口径较小，传世不多”。?</p>
 
-                    笔筒是一种最为常见的置笔用具，一般呈圆筒状，材质多样，可见竹、木、瓷、漆、玉、象牙、紫砂等，是文人书案上的常设之物。在古代，笔筒以其艺术个性和较高的文化品位，受到文人墨客的青睐。明代文人朱彝尊曾作《笔筒铭》，云：“笔之在案，或侧或颇，犹人之无仪，筒以束之，如客得家，闲彼放心，归于无邪。”
+                    <p>
+                        笔筒是一种最为常见的置笔用具，一般呈圆筒状，材质多样，可见竹、木、瓷、漆、玉、象牙、紫砂等，是文人书案上的常设之物。在古代，笔筒以其艺术个性和较高的文化品位，受到文人墨客的青睐。明代文人朱彝尊曾作《笔筒铭》，云：“笔之在案，或侧或颇，犹人之无仪，筒以束之，如客得家，闲彼放心，归于无邪。”</p>
 
-                    笔筒的制作除了材质的不同，绘画技法也得到了充分的体现。二十世纪初期，江西景德镇的瓷画艺人对传统粉彩画法加以改造，用粉彩原料在瓷器上绘制中国画，形成了以“珠山八友”为代表的瓷绘名家流派。余文襄，又名恂松，别号华舜，斋名“清平画室”“名泉古屋”，师承“珠山八友”之一的何许人，擅长绘画雪景。他的雪景画构思严谨，极富诗意，被誉为“雪景大王”。
+                    <p>
+                        笔筒的制作除了材质的不同，绘画技法也得到了充分的体现。二十世纪初期，江西景德镇的瓷画艺人对传统粉彩画法加以改造，用粉彩原料在瓷器上绘制中国画，形成了以“珠山八友”为代表的瓷绘名家流派。余文襄，又名恂松，别号华舜，斋名“清平画室”“名泉古屋”，师承“珠山八友”之一的何许人，擅长绘画雪景。他的雪景画构思严谨，极富诗意，被誉为“雪景大王”。</p>
 
-                    笔筒是中国古代除笔、墨、纸、砚以外最重要的文房用具，大约出现在明朝中晚期。笔筒因使用方便，很快就风靡天下，至今仍盛而不衰。
+                    <p>笔筒是中国古代除笔、墨、纸、砚以外最重要的文房用具，大约出现在明朝中晚期。笔筒因使用方便，很快就风靡天下，至今仍盛而不衰。</p>
 
-                    明清笔筒传世品极多，虽形制变化不大，但材质却颇为丰富。有竹、瓷、木、铜、象牙、玉、水晶、端石、漆等。从装饰方法上看，有刻、镂、雕、绘等，以瓷笔筒为例，有青花、五彩、粉彩、三彩、颜色釉等。笔筒为文房用具中器型变化最小，装饰方法最为丰富的品种之一。
+                    <p>
+                        明清笔筒传世品极多，虽形制变化不大，但材质却颇为丰富。有竹、瓷、木、铜、象牙、玉、水晶、端石、漆等。从装饰方法上看，有刻、镂、雕、绘等，以瓷笔筒为例，有青花、五彩、粉彩、三彩、颜色釉等。笔筒为文房用具中器型变化最小，装饰方法最为丰富的品种之一。</p>
                 </div>
             </div>
         </div>
         <div class="goo_ri fr">2</div>
     </div>
 </div>
+<style>
+    #video {
+        background: rgba(0, 0, 0, .3);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+    }
+
+    #video .videobox {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #video .close {
+        position: absolute;
+        right: -23px;
+        top: -23px;
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 23px;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    #video .video {
+        width: 720px;
+        height: 550px;
+        background-color: #111;
+    }
+
+    #video .info {
+        width: 480px;
+        height: 550px;
+        background-color: #fff;
+        overflow: hidden;
+        padding: 30px;
+    }
+
+    #video .info .tit {
+        font-size: 20px;
+        color: #111;
+        line-height: 20px;
+    }
+
+    #video .info .leibie {
+        font-size: 16px;
+        color: #999;
+        line-height: 16px;
+        margin-top: 18px;
+    }
+
+    #video .info .leibie span {
+        color: #666;
+    }
+
+    #video .info .sale {
+        font-size: 16px;
+        line-height: 16px;
+        color: #999;
+        margin-top: 28px;
+    }
+
+    #video .info .sale span {
+        font-size: 24px;
+        color: #f46100;
+        vertical-align: top;
+    }
+
+    #video .info table {
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        margin-top: 40px;
+    }
+
+    #video .info table td {
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        height: 40px;
+        line-height: 40px;
+        word-wrap: break-word;
+        font-size: 14px;
+    }
+
+    #video .info table .t {
+        width: 80px;
+        padding-left: 10px;
+        color: #777;
+    }
+
+    #video .info table .c {
+        width: 130px;
+        color: #333;
+        padding-left: 15px;
+        overflow: hidden;
+    }
+
+    #video .info .tel {
+        padding: 40px 0;
+        font-size: 26px;
+        color: #f46100;
+    }
+
+    #video .info .pinglun .tit {
+        font-size: 16px;
+        color: #111;
+        line-height: 16px;
+        border-left: 2px solid #f46100;
+        padding-left: 10px;
+        margin-bottom: 6px;
+    }
+
+    #video .info .pinglun .name {
+        font-size: 14px;
+        color: #0067c9;
+    }
+
+    #video .info .pinglun .time {
+        font-size: 14px;
+        color: #999;
+    }
+
+    #video .info .pinglun .con {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+</style>
+<script>
+
+    function open_video() {
+        var html = "<div id=\"video\">\n" +
+            "    <div class=\"videobox w1200\">\n" +
+            "        <div class=\"video fl\">\n" +
+            "            <video id=\"my-video\" class=\"video-js vjs-default-skin vjs-big-play-centered\" controls preload=\"auto\" width=\"720\" height=\"550\"\n" +
+            "                   poster=\"m.png\" data-setup=\"{}\" autoplay>\n" +
+            "                <source src=\"http://jq22com.qiniudn.com/jq22-sp.mp4\" type=\"video/mp4\">\n" +
+            "                <p class=\"vjs-no-js\">\n" +
+            "                    To view this video please enable JavaScript, and consider upgrading to a web browser that\n" +
+            "                    <a href=\"http://videojs.com/html5-video-support/\" target=\"_blank\">supports HTML5 video</a>\n" +
+            "                </p>\n" +
+            "            </video>\n" +
+            "        </div>\n" +
+            "        <div class=\"info fr\">\n" +
+            "            <p class=\"tit text_ell\">清光绪款青花龙纹盘清光绪款青花龙纹盘清光绪款青花龙纹盘清光绪款青花龙纹盘清光绪款青花龙纹盘清光绪款青花龙纹盘清光绪款青花龙纹盘清光绪款青花龙纹盘</p>\n" +
+            "            <p class=\"leibie\">类别：<span>瓷器</span></p>\n" +
+            "            <p class=\"sale\">委托售价：<span>RMB  360000</span></p>\n" +
+            "            <table>\n" +
+            "                <tr>\n" +
+            "                    <td class=\"t\">年代</td>\n" +
+            "                    <td class=\"c\">清代</td>\n" +
+            "                    <td class=\"t\">作者</td>\n" +
+            "                    <td class=\"c\">王羲之</td>\n" +
+            "                </tr>\n" +
+            "                <tr>\n" +
+            "                    <td class=\"t\">规格</td>\n" +
+            "                    <td class=\"c\">25.5*25.5*1.5cm</td>\n" +
+            "                    <td class=\"t\">重量</td>\n" +
+            "                    <td class=\"c\">9kg</td>\n" +
+            "                </tr>\n" +
+            "                <tr>\n" +
+            "                    <td class=\"t\">保存状态</td>\n" +
+            "                    <td class=\"c\">完好</td>\n" +
+            "                    <td class=\"t\">来源</td>\n" +
+            "                    <td class=\"c\">祖传</td>\n" +
+            "                </tr>\n" +
+            "            </table>\n" +
+            "            <p class=\"tel\">开通VIP会员：<img src=\"images/info_telico.png\" class=\"middle\" alt=\"\">400-805-6760</p>\n" +
+            "            <div class=\"pinglun\">\n" +
+            "                <p class=\"tit\">最新评论</p>\n" +
+            "                <div class=\"flex_sb\" style=\"border-top: 1px solid #ccc; padding-top: 10px;\">\n" +
+            "                    <p class=\"name\">清风杨020<img src=\"\" alt=\"\" class=\"middle\"></p>\n" +
+            "                    <p class=\"time\">2018-01-15 16：32</p>\n" +
+            "                </div>\n" +
+            "                <p class=\"con\">一件藏品的出售需要考虑四方面的因素：藏品，时机，项目，平台。这四方面缺一不可，如果有好的藏品……</p>\n" +
+            "            </div>\n" +
+            "        </div>\n" +
+            "        <a href=\"javascript:;\" class=\"close\">X</a>\n" +
+            "    </div>\n" +
+            "</div>";
+        $("body").append(html);
+    }
+
+    $(document).on("click", "#video .close", function () {
+        $("#video").remove();
+    });
+    $("#video .close").click(function () {
+        $("#video").remove();
+    });
+</script>
 </body>
 </html>
